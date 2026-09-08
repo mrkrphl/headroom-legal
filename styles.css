@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap");
+
+:root {
+  color-scheme: dark;
+  --night: #070b14;
+  --horizon: #121a2a;
+  --bone: #f2f0ea;
+  --lime: #c8d86a;
+  --orange: #c45c32;
+  --mist: #8a93a3;
+  --rule: #1e2738;
+  --max: 40rem;
+  --radius: 12px;
+  font-family: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  line-height: 1.55;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--night);
+  color: var(--bone);
+}
+
+a {
+  color: var(--lime);
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  color: var(--bone);
+}
+
+.page {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3.5rem;
+}
+
+.hero-bleed {
+  background:
+    radial-gradient(90% 70% at 70% 0%, #1a2740 0%, transparent 55%),
+    linear-gradient(180deg, #070b14 0%, #0e1524 55%, #1a2233 100%);
+  color: var(--bone);
+  padding: 3.5rem 1.25rem 3rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.hero-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+}
+
+.eyebrow {
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  opacity: 0.55;
+  margin: 0 0 1rem;
+  color: var(--lime);
+}
+
+.hero-bleed h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(2rem, 7vw, 3.1rem);
+  letter-spacing: -0.03em;
+  line-height: 1.12;
+  font-weight: 600;
+}
+
+.hero-bleed .lede {
+  margin: 0;
+  max-width: 28rem;
+  opacity: 0.8;
+  font-size: 1.05rem;
+  color: var(--mist);
+}
+
+.cta-row {
+  margin: 1.5rem 0 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.85rem 1.25rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--lime);
+  color: var(--night);
+}
+
+.btn-primary:hover {
+  filter: brightness(1.05);
+  color: var(--night);
+}
+
+.cta-note {
+  margin: 0.75rem 0 0;
+  font-size: 0.85rem;
+  color: var(--mist);
+}
+
+.proof {
+  margin-top: 2rem;
+}
+
+.proof h2 {
+  font-size: 1.25rem;
+  margin: 0 0 1rem;
+}
+
+.proof-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.proof-list li {
+  background: var(--horizon);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 1rem 1.1rem;
+  font-size: 0.95rem;
+  color: var(--mist);
+}
+
+.proof-list strong {
+  color: var(--bone);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.site-nav,
+.site-footer {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+  font-size: 0.9rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--rule);
+  color: var(--mist);
+  margin-top: 2rem;
+}
+
+.article h1 {
+  font-size: 1.85rem;
+  margin: 0.5rem 0 0.35rem;
+}
+
+.article .updated,
+.back {
+  font-size: 0.85rem;
+  color: var(--mist);
+}
+
+.article h2 {
+  font-size: 1.15rem;
+  margin: 1.75rem 0 0.5rem;
+}
+
+.article p,
+.article li {
+  color: var(--mist);
+}
+
+.article strong {
+  color: var(--bone);
+}
